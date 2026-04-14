@@ -1,0 +1,66 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "name": "rex25-mcp",
+  "displayName": "Rex-25 MCP",
+  "description": "Bitcoin-native, decentralized AI runtime exposed as 12 MCP tools. Race 10 frontier LLMs, search Grokipedia and Common Crawl, query BTC and Solana on-chain data, all from one npx command.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Elrom",
+    "email": "inteligenciaartificial.now@gmail.com",
+    "url": "https://github.com/ElromEvedElElyon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElromEvedElElyon/Rex-25-MCP"
+  },
+  "homepage": "https://github.com/ElromEvedElElyon/Rex-25-MCP#readme",
+  "bugs": "https://github.com/ElromEvedElElyon/Rex-25-MCP/issues",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "bitcoin",
+    "lightning",
+    "llm",
+    "ai",
+    "decentralized",
+    "claude",
+    "cursor",
+    "cline",
+    "common-crawl",
+    "grokipedia",
+    "wikipedia"
+  ],
+  "categories": ["AI", "Bitcoin", "Search", "Web", "Data"],
+  "runtime": "node",
+  "transport": ["stdio"],
+  "install": {
+    "npm": "npx rex25-mcp"
+  },
+  "config": {
+    "command": "npx",
+    "args": ["-y", "rex25-mcp"],
+    "env": {
+      "REX25_NODE_URL": "http://127.0.0.1:7825",
+      "REX25_LOG_LEVEL": "info"
+    }
+  },
+  "tools": [
+    { "name": "rex25_chat", "description": "LLM query, racing 10 frontier vendors first-response-wins." },
+    { "name": "rex25_distill", "description": "Multi-LLM consensus, distillation-ready signal." },
+    { "name": "rex25_grokipedia_search", "description": "Search xAI's Grokipedia (235 sitemaps)." },
+    { "name": "rex25_wikipedia_search", "description": "Search Wikipedia REST API." },
+    { "name": "rex25_common_crawl", "description": "2.5B pages/month web index lookup." },
+    { "name": "rex25_classify_file", "description": "Magic-byte file type detection." },
+    { "name": "rex25_to_markdown", "description": "HTML or document to clean Markdown." },
+    { "name": "rex25_forecast", "description": "Linear time-series projection." },
+    { "name": "rex25_btc_price", "description": "BTC live price (CoinGecko)." },
+    { "name": "rex25_stbtcx_info", "description": "STBTCx Solana token info." },
+    { "name": "rex25_rune_info", "description": "BITCOIN-USD-ONE Bitcoin Rune info." },
+    { "name": "rex25_node_status", "description": "Local rex25-node health and queue depth." }
+  ],
+  "security": {
+    "policy": "SECURITY.md",
+    "contact": "inteligenciaartificial.now@gmail.com"
+  }
+}

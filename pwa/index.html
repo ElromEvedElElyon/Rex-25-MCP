@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#D4922B" />
+  <meta name="description" content="Rex-25 MCP - the trillion-parameter agent in your desk. Earn Bitcoin." />
+  <title>Rex-25 - Bitcoin Agents</title>
+  <link rel="manifest" href="/rex25/manifest.json" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/rex25/icons/192.png" />
+  <link rel="apple-touch-icon" href="/rex25/icons/192.png" />
+  <link rel="stylesheet" href="/rex25/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container row">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Rex-25</span></div>
+      <nav>
+        <a href="#install">Install</a>
+        <a href="#features">Features</a>
+        <a href="#chat">Try it</a>
+        <a href="https://github.com/ElromEvedElElyon/Rex-25-MCP" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero container">
+      <h1>The trillion-parameter agent <span class="gold">in your desk.</span></h1>
+      <p class="lead">Run Rex-25 as a Model Context Protocol server. Local-first, Lightning-billed, installs in one line.</p>
+      <div class="cta-row">
+        <a href="#install" class="btn btn-gold">Install now</a>
+        <a href="https://github.com/ElromEvedElElyon/Rex-25-MCP" class="btn" target="_blank" rel="noopener">View source</a>
+      </div>
+      <div class="snippet" id="snippet">
+        <code id="snippet-code">curl -fsSL https://sintex.ai/rex25/install.sh | sh</code>
+        <button class="copy-btn" onclick="copySnippet()">Copy</button>
+      </div>
+    </section>
+    <section class="block" id="install">
+      <div class="container">
+        <h2>One-liner install</h2>
+        <div class="grid">
+          <div class="card"><h3 class="accent">macOS / Linux</h3><p><code>curl -fsSL https://sintex.ai/rex25/install.sh | sh</code></p></div>
+          <div class="card"><h3 class="accent">Windows</h3><p><code>iwr -useb https://sintex.ai/rex25/install.ps1 | iex</code></p></div>
+          <div class="card"><h3 class="accent">Android (Termux)</h3><p><code>curl -fsSL https://sintex.ai/rex25/install-android.sh | sh</code></p></div>
+          <div class="card"><h3 class="accent">iOS / iPadOS</h3><p>Add this page to home screen via Safari. <a href="/rex25/install-ios.html">Power-user guide</a></p></div>
+        </div>
+      </div>
+    </section>
+    <section class="block" id="features">
+      <div class="container">
+        <h2>Why Rex-25</h2>
+        <div class="grid">
+          <div class="card"><h3>Local-first</h3><p>The MCP server runs on your machine. Your data never leaves unless you ask.</p></div>
+          <div class="card"><h3>Lightning-billed</h3><p>1 sat per query during HIBERNATION (free trial). Pay only for what you use.</p></div>
+          <div class="card"><h3>MCP-native</h3><p>Plug into Claude Desktop, Cursor, Cline. Same protocol, zero glue code.</p></div>
+          <div class="card"><h3>Constellation-ready</h3><p>Every node contributes queries to the swarm. Your phone is a thin-client.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="block" id="chat">
+      <div class="container">
+        <h2>Try it (offline-friendly)</h2>
+        <div class="chat-box">
+          <div class="chat-log" id="chat-log">
+            <div class="msg"><span class="role">rex25:</span>Ask me about Bitcoin price, MCP setup, or anything else.</div>
+          </div>
+          <form class="chat-input" onsubmit="return sendChat(event)">
+            <input type="text" id="chat-q" placeholder="Ask Agent Elrom anything..." autocomplete="off" />
+            <button class="btn btn-gold" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="block" id="roadmap">
+      <div class="container">
+        <h2>Constellation roadmap</h2>
+        <div class="grid">
+          <div class="card"><h3 class="accent">1. HIBERNATION</h3><p>Free trial. Cloud fallback. Build trust.</p></div>
+          <div class="card"><h3 class="accent">2. TRIAL</h3><p>1 sat/query. NWC pairing. Local routing.</p></div>
+          <div class="card"><h3 class="accent">3. ACTIVE</h3><p>Heavy-fragment nodes online. LoRA training.</p></div>
+          <div class="card"><h3 class="accent">4. SCALING</h3><p>Trillion-param sharded across constellation.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="install-banner">
+    <span>Install Rex-25 to your home screen for offline access.</span>
+    <button class="btn btn-gold" id="install-btn">Install</button>
+  </div>
+  <footer>
+    <div class="container">Rex-25 MCP &middot; <a href="https://github.com/ElromEvedElElyon/Rex-25-MCP" target="_blank" rel="noopener">GitHub</a> &middot; <a href="/rex25/docs/manifesto.html">Manifesto</a> &middot; sintex.ai</div>
+  </footer>
+  <script src="/rex25/install-prompt.js" defer></script>
+  <script src="/rex25/app.js" defer></script>
+</body>
+</html>

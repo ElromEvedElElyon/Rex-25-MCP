@@ -1,0 +1,53 @@
+{
+  "name": "rex25-mcp",
+  "version": "0.1.0",
+  "description": "Rex-25 MCP — Bitcoin-native AI agent. 12 tools. Lightning. Constellation.",
+  "main": "dist/index.js",
+  "bin": {
+    "rex25-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "bitcoin",
+    "lightning",
+    "x402",
+    "ai",
+    "llm",
+    "agent",
+    "stbtcx",
+    "runes"
+  ],
+  "author": "Elrom <inteligenciaartificial.now@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElromEvedElElyon/Rex-25-MCP.git"
+  },
+  "homepage": "https://github.com/ElromEvedElElyon/Rex-25-MCP",
+  "bugs": {
+    "url": "https://github.com/ElromEvedElElyon/Rex-25-MCP/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "glama.json"
+  ]
+}
